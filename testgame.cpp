@@ -10,6 +10,6 @@ int main(int argc, char *argv[]) {
         cmd += " ";
         cmd += *(argv++);
     }
-    system(cmd.c_str());
-    return 0;
+    int ret = system(cmd.c_str());
+    return ret;
 }
